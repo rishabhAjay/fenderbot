@@ -1,0 +1,11 @@
+logs/
+
+# dependencies
+/node_modules
+build
+
+# local env files
+.env
+
+# build output
+/build

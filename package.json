@@ -1,0 +1,37 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/bot.js",
+  "scripts": {
+    "start": "node .",
+    "start:env": "node --env-file .env .",
+    "build": "npx tsc && cp -r ./src/public/ ./build"
+  },
+  "author": "droidotoko",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "convert-csv-to-json": "^2.46.0",
+    "dayjs": "^1.11.11",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.4.5",
+    "extract-urls": "^1.4.1",
+    "json-2-csv": "^5.5.1",
+    "kysely": "^0.27.3",
+    "mysql2": "^3.9.7",
+    "node-cron": "^3.0.3",
+    "prisma": "^5.9.1",
+    "prisma-kysely": "^1.8.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "@types/node-cron": "^3.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "tsx": "^4.7.0",
+    "typescript": "5.3.3"
+  }
+}
